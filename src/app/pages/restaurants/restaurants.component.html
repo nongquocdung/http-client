@@ -1,0 +1,20 @@
+<div class="grid-container">
+    <div class="left">
+        <h1>List of restaurants</h1>
+        <br>
+        <div *ngFor="let restaurant of restaurants">
+            <app-restaurant [restaurant]="restaurant"></app-restaurant>
+        </div>
+    </div>
+    <div class="right">
+        <h1>Add restaurant</h1>
+        <br>
+        <form class="form" [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+            <label for="name">Name: </label>
+            <input id="name" type="text" formControlName="name">
+            <label for="address">Address: </label>
+            <input id="address" type="text" formControlName="address">
+            <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+        </form>
+    </div>
+</div>

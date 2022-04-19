@@ -1,0 +1,57 @@
+.container {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  gap: 10px;
+}
+
+.link {
+  display: flex;
+  max-width: 300px;
+  width: fit-content;
+  align-content: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.id {
+  height: 30px;
+  width: 30px;
+  background-color: coral;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.name {
+  height: 30px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(18, 138, 78);
+  color: white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-weight: 700;
+}
+
+.name span {
+  margin-left: 10px;
+}
+
+button {
+  height: 30px;
+  width: 50px;
+  background-color: rgb(240, 112, 112);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(253, 186, 186);
+}

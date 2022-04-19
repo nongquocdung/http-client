@@ -1,0 +1,7 @@
+<div class="container" *ngIf="exist && restaurant">
+    <div class=" link" routerLink="{{restaurant.id}}">
+        <div class="id">{{restaurant.id}}</div>
+        <div class="name"><span>{{restaurant.name}}</span></div>
+    </div>
+    <button (click)="deleteRestaurant()">Delete</button>
+</div>

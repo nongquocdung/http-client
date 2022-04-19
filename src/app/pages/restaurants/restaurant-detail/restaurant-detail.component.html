@@ -1,0 +1,13 @@
+<ng-container *ngIf="restaurantInfo">
+    <div class="container">
+        <h1>Details of Restaurant <span class="name">{{restaurantInfo.name}}</span></h1>
+        <br>
+        <form class="form" [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+            <label for="id" class="id">ID: <span>{{restaurantInfo.id}}</span></label>
+            <div class="name">Name: <input type="text" formControlName="name"></div>
+            <div class="address">Address: <input type="text" size="100" formControlName="address"></div>
+            <button type="submit">Submit</button>
+        </form>
+
+    </div>
+</ng-container>

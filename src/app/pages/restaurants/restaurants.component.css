@@ -1,0 +1,35 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 100px;
+}
+
+.form {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.form label {
+  margin: 5px 0 5px 0;
+}
+
+.form button {
+  margin-top: 10px;
+  background-color: cadetblue;
+  color: aliceblue;
+  align-self: center;
+}
+
+button {
+  height: 30px;
+  width: 50px;
+  background-color: rgb(240, 112, 112);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(253, 186, 186);
+}
